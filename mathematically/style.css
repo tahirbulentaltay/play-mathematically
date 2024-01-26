@@ -1,0 +1,224 @@
+@font-face {
+    font-family: 'Darling Delicate 400';
+    src: url('font/Darling\ Delicate\ 400.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sevilla';
+    src: url('font/Sevillana-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+div.mainBody {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: darkcyan;
+}
+
+/* div.mainBody:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -10%;
+    width: 100%;
+    opacity: 0.1;
+    background-image: url('/img/math-1143869_1280.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    height: 100rem;
+    border: 1px solid red;
+} */
+#divTitle {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+/*! Başlık içerir.*/
+div.childBody {
+    margin-top: 1rem;
+    width: 60rem;
+    height: 6rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(230, 200, 150);
+}
+
+#yellow,
+#purple {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    align-self: center;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#purple {
+    background-color: purple;
+}
+
+h1#title {
+    color: rgb(255, 38, 0);
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2rem;
+    font-size: 4rem;
+    font-family: 'Darling Delicate 400', sans-serif;
+}
+
+/*! "play with computer" tuşunu içerir.*/
+div#getUniqueNumber {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4rem;
+    width: 36rem;
+    height: 5rem;
+    background-color: rgb(97, 181, 153);
+}
+
+/*! "play with computer" tuşu.*/
+button#myMainButton {
+    display: flex;
+    color: blue;
+    font-family: 'Darling Delicate 400', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 10px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    border: 2px;
+    border-radius: 4rem;
+    width: 34rem;
+    height: 3rem;
+    opacity: 75%;
+}
+
+/*!generateUniqueRandomNumber() fonksiyonu ile çalışıyor.*/
+button.clicked {
+    transform: scale(0.85, 0.85);
+    transition: transform 0.5s ease;
+}
+
+button#myMainButton:disabled {
+    background-color: gray;
+    color: white;
+    cursor: not-allowed;
+    height: 3rem;
+}
+
+/*! input değerleri, tuşları ve geri bildirimleri içeren listeyi içerir.*/
+div#input {
+    margin-top: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    columns: 4;
+    column-gap: 4rem;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+/*! input değerleri, tuşları ve geri bildirimleri içeren liste.*/
+ul.ulInput {
+    margin-top: 0;
+    list-style: none;
+}
+
+li {
+    margin-bottom: 5rem;
+}
+
+p.bullet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid red;
+    border-radius: 50%;
+    background-color: rgb(253, 144, 1);
+}
+
+button.myInputButton {
+    position: relative;
+    display: flex;
+    color: yellow;
+    font-family: 'Darling Delicate 400', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 6px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid tomato;
+    border-radius: 4rem;
+    width: 16rem;
+    height: 2rem;
+    opacity: 75%;
+    background-color: rgb(66, 95, 121);
+    margin-bottom: 3rem;
+}
+
+input.myGuessInput {
+    position: absolute;
+    border-radius: 5px;
+    top: -20%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    width: 10rem;
+    height: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+p.myPFeedback {
+    position: absolute;
+    top: 70%;
+    right: 50%;
+    transform: translate(50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1rem;
+    font-size: 1rem;
+    font-family: monospace, sans-serif;
+    width: 18rem;
+    height: 3rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    background-color: #240202;
+}
+
+p#worksheet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: yellow;
+    text-align: center;
+    font-family: 'Darling Delicate 400', sans-serif;
+    letter-spacing: 1rem;
+}
+
+textarea#scratchpad {
+    background-color: antiquewhite;
+    font-size: 1.2rem;
+    color: white;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="mainBody">
+        <div id="divTitle">
+            <div id="yellow"></div>
+            <div class="childBody">
+                <h1 id="title">mathematically</h1>
+            </div>
+            <div id="purple"></div>
+        </div>
+        <div id="getUniqueNumber">
+            <button onclick="generateUniqueRandomNumber(), disableButton()" id="myMainButton">play with
+                computer😉</button>
+        </div>
+
+        <div id="input">
+            <ul class="ulInput">
+                <li>
+                    <p class="bullet">1</p>
+                    <button id="myButton1" class="myInputButton" onclick="myFunction1()">
+                        <input type="text" id="myInput1" class="myGuessInput" value="" onkeydown="handleEnter1(event)"
+                            onfocus="myFunctionY(this)">
+                        <p id="myP1" class="myPFeedback"></p>
+                        enter your guess
+                    </button>
+                </li>
+                <li>
+                    <p class="bullet">2</p>
+                    <button id="myButton2" class="myInputButton" onclick="myFunction2()">
+                        <input type="text" id="myInput2" class="myGuessInput" value="" onkeydown="handleEnter2(event)"
+                            onfocus="myFunctionY(this)">
+                        <p id="myP2" class="myPFeedback"></p>
+                        enter your guess
+                    </button>
+                </li>
+                <li>
+                    <p class="bullet">3</p>
+                    <button id="myButton3" class="myInputButton" onclick="myFunction3()">
+                        <input type="text" id="myInput3" class="myGuessInput" value="" onkeydown="handleEnter3(event)"
+                            onfocus="myFunctionY(this)">
+                        <p id="myP3" class="myPFeedback"></p>
+                        enter your guess
+                    </button>
+                </li>
+
+            </ul>
+            <ul class="ulInput">
+                <li>
+                    <p class="bullet">4</p>
+                    <button id="myButton4" class="myInputButton" onclick="myFunction4()">
+                        <input type="text" id="myInput4" class="myGuessInput" value="" onkeydown="handleEnter4(event)"
+                            onfocus="myFunctionY(this)">
+                        <p id="myP4" class="myPFeedback"></p>
+                        enter your guess
+                    </button>
+                </li>
+                <li>
+                    <p class="bullet">5</p>
+                    <button id="myButton5" class="myInputButton" onclick="myFunction5()">
+                        <input type="text" id="myInput5" class="myGuessInput" value="" onkeydown="handleEnter5(event)"
+                            onfocus="myFunctionY(this)">
+                        <p id="myP5" class="myPFeedback"></p>
+                        enter your guess
+                    </button>
+                </li>
+                <li>
+                    <p class="bullet">6</p>
+                    <button id="myButton6" class="myInputButton" onclick="myFunction6()">
+                        <input type="text" id="myInput6" class="myGuessInput" value="" onkeydown="handleEnter6(event)"
+                            onfocus="myFunctionY(this)">
+                        <p id="myP6" class="myPFeedback"></p>
+                        enter your guess
+                    </button>
+                </li>
+
+            </ul>
+            <ul class="ulInput">
+                <li>
+                    <p class="bullet">7</p>
+                    <button id="myButton7" class="myInputButton" onclick="myFunction7()">
+                        <input type="text" id="myInput7" class="myGuessInput" value="" onkeydown="handleEnter7(event)"
+                            onfocus="myFunctionY(this)">
+                        <p id="myP7" class="myPFeedback"></p>
+                        enter your guess
+                    </button>
+                </li>
+                <li>
+                    <p class="bullet">8</p>
+                    <button id="myButton8" class="myInputButton" onclick="myFunction8()">
+                        <input type="text" id="myInput8" class="myGuessInput" value="" onkeydown="handleEnter8(event)"
+                            onfocus="myFunctionY(this)">
+                        <p id="myP8" class="myPFeedback"></p>
+                        enter your guess
+                    </button>
+                </li>
+                <li>
+                    <p class="bullet">9</p>
+                    <button id="myButton9" class="myInputButton" onclick="myFunction9()">
+                        <input type="text" id="myInput9" class="myGuessInput" value="" onkeydown="handleEnter9(event)"
+                            onfocus="myFunctionY(this)">
+                        <p id="myP9" class="myPFeedback"></p>
+                        enter your guess
+                    </button>
+                </li>
+            </ul>
+            <div>
+                <p id="worksheet">worksheet<br>scratchpad</p>
+                <div>
+                    <textarea id="scratchpad" name="scratchpad" rows="15" cols="26" placeholder=""
+                        onfocus="myFunctionX(this)"></textarea>
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+</body>
+
+</html>
